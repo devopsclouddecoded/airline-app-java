@@ -1,0 +1,165 @@
+2025-09-30 17:44:43,426 INFO o.s.b.StartupInfoLogger [main] Starting AirlineApplicationTests using Java 17.0.12 with PID 4136 (started by ctgdevopsai in E:\Personal\airline-app-java-db)
+2025-09-30 17:44:43,441 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.0.11, Spring v6.0.12
+2025-09-30 17:44:43,445 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-09-30 17:44:46,535 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-30 17:44:46,805 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 230 ms. Found 1 JPA repository interfaces.
+2025-09-30 17:44:48,709 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-30 17:44:49,145 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2025-09-30 17:44:51,600 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-09-30 17:44:53,514 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-30 17:44:53,527 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-09-30 17:44:53,670 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-09-30 17:44:58,690 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-30 17:44:58,732 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30 17:45:01,808 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-30 17:45:03,911 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-09-30 17:45:04,564 INFO o.s.b.StartupInfoLogger [main] Started AirlineApplicationTests in 23.651 seconds (process running for 33.659)
+2025-09-30 17:45:06,334 INFO c.a.c.FlightController [main] Updating flight with ID: 1
+2025-09-30 17:45:06,335 DEBUG c.a.c.FlightController [main] Update data: Flight{flightId=1, flightName='null', source='null', Destination='null', ticketPrice=null}
+2025-09-30 17:45:06,359 INFO c.a.c.FlightController [main] Successfully updated flight with ID: 1
+2025-09-30 17:45:06,415 INFO c.a.c.FlightController [main] Deleting flight with ID: 1
+2025-09-30 17:45:06,416 INFO c.a.c.FlightController [main] Successfully deleted flight with ID: 1
+2025-09-30 17:45:06,456 INFO c.a.c.FlightController [main] Fetching all flights
+2025-09-30 17:45:06,462 DEBUG c.a.c.FlightController [main] Retrieved 2 flights from database
+2025-09-30 17:45:06,464 DEBUG c.a.c.FlightController [main] Server IP: 172.27.56.35
+2025-09-30 17:45:06,469 INFO c.a.c.FlightController [main] Successfully retrieved all flights with server IP
+2025-09-30 17:45:06,478 INFO c.a.c.FlightController [main] Adding new flight: Flight{flightId=0, flightName='null', source='null', Destination='null', ticketPrice=null}
+2025-09-30 17:45:06,479 INFO c.a.c.FlightController [main] Successfully added flight with ID: 0
+2025-09-30 17:45:06,484 INFO c.a.c.FlightController [main] Fetching flight with ID: 1
+2025-09-30 17:45:06,485 INFO c.a.c.FlightController [main] Successfully retrieved flight with ID: 1
+2025-09-30 17:45:06,914 INFO c.a.s.i.FlightServiceImpl [main] Updating flight with ID: 1
+2025-09-30 17:45:06,914 DEBUG c.a.s.i.FlightServiceImpl [main] Update data: Flight{flightId=1, flightName='UpdatedFlight', source='UpdatedSource', Destination='UpdatedDestination', ticketPrice=150.0}
+2025-09-30 17:45:06,916 INFO c.a.s.i.FlightServiceImpl [main] Successfully updated flight with ID: 1
+2025-09-30 17:45:06,923 INFO c.a.s.i.FlightServiceImpl [main] Deleting flight with ID: 1
+2025-09-30 17:45:06,924 INFO c.a.s.i.FlightServiceImpl [main] Successfully deleted flight with ID: 1
+2025-09-30 17:45:06,934 INFO c.a.s.i.FlightServiceImpl [main] Retrieving flight with ID: 1
+2025-09-30 17:45:06,936 INFO c.a.s.i.FlightServiceImpl [main] Successfully retrieved flight with ID: 1
+2025-09-30 17:45:06,944 INFO c.a.s.i.FlightServiceImpl [main] Retrieving all flights
+2025-09-30 17:45:06,945 INFO c.a.s.i.FlightServiceImpl [main] Retrieved 2 flights from database
+2025-09-30 17:45:06,959 INFO c.a.s.i.FlightServiceImpl [main] Adding new flight: Flight{flightId=1, flightName='TestFlight', source='Source', Destination='Destination', ticketPrice=100.0}
+2025-09-30 17:45:06,960 INFO c.a.s.i.FlightServiceImpl [main] Flight saved with ID: 1
+2025-09-30 17:45:06,979 INFO c.a.s.i.FlightServiceImpl [main] Retrieving flight with ID: 999
+2025-09-30 17:45:06,979 ERROR c.a.s.i.FlightServiceImpl [main] Error retrieving flight with ID 999: No Flight with Id: 999
+2025-09-30 17:45:07,147 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30 17:45:07,794 INFO o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-09-30 17:45:07,808 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-09-30 17:45:07,845 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-09-30 17:46:01,194 INFO o.s.b.StartupInfoLogger [main] Starting AirlineApplicationTests using Java 17.0.12 with PID 19280 (started by ctgdevopsai in E:\Personal\airline-app-java-db)
+2025-09-30 17:46:01,204 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.0.11, Spring v6.0.12
+2025-09-30 17:46:01,206 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-09-30 17:46:04,507 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-30 17:46:04,825 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 271 ms. Found 1 JPA repository interfaces.
+2025-09-30 17:46:06,545 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-30 17:46:06,937 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2025-09-30 17:46:08,415 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-09-30 17:46:09,568 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-30 17:46:09,574 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-09-30 17:46:09,776 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-09-30 17:46:13,020 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-30 17:46:13,064 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30 17:46:14,922 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-30 17:46:16,287 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-09-30 17:46:16,670 INFO o.s.b.StartupInfoLogger [main] Started AirlineApplicationTests in 17.728 seconds (process running for 24.912)
+2025-09-30 17:46:18,488 INFO c.a.c.FlightController [main] Updating flight with ID: 1
+2025-09-30 17:46:18,491 DEBUG c.a.c.FlightController [main] Update data: Flight{flightId=1, flightName='null', source='null', Destination='null', ticketPrice=null}
+2025-09-30 17:46:18,515 INFO c.a.c.FlightController [main] Successfully updated flight with ID: 1
+2025-09-30 17:46:18,816 INFO c.a.c.FlightController [main] Deleting flight with ID: 1
+2025-09-30 17:46:18,818 INFO c.a.c.FlightController [main] Successfully deleted flight with ID: 1
+2025-09-30 17:46:18,826 INFO c.a.c.FlightController [main] Fetching all flights
+2025-09-30 17:46:18,840 DEBUG c.a.c.FlightController [main] Retrieved 2 flights from database
+2025-09-30 17:46:18,877 DEBUG c.a.c.FlightController [main] Server IP: 172.27.56.35
+2025-09-30 17:46:18,911 INFO c.a.c.FlightController [main] Successfully retrieved all flights with server IP
+2025-09-30 17:46:18,987 INFO c.a.c.FlightController [main] Adding new flight: Flight{flightId=0, flightName='null', source='null', Destination='null', ticketPrice=null}
+2025-09-30 17:46:18,991 INFO c.a.c.FlightController [main] Successfully added flight with ID: 0
+2025-09-30 17:46:19,012 INFO c.a.c.FlightController [main] Fetching flight with ID: 1
+2025-09-30 17:46:19,014 INFO c.a.c.FlightController [main] Successfully retrieved flight with ID: 1
+2025-09-30 17:46:19,699 INFO c.a.s.i.FlightServiceImpl [main] Updating flight with ID: 1
+2025-09-30 17:46:19,700 DEBUG c.a.s.i.FlightServiceImpl [main] Update data: Flight{flightId=1, flightName='UpdatedFlight', source='UpdatedSource', Destination='UpdatedDestination', ticketPrice=150.0}
+2025-09-30 17:46:19,701 INFO c.a.s.i.FlightServiceImpl [main] Successfully updated flight with ID: 1
+2025-09-30 17:46:19,710 INFO c.a.s.i.FlightServiceImpl [main] Deleting flight with ID: 1
+2025-09-30 17:46:19,712 INFO c.a.s.i.FlightServiceImpl [main] Successfully deleted flight with ID: 1
+2025-09-30 17:46:19,722 INFO c.a.s.i.FlightServiceImpl [main] Retrieving flight with ID: 1
+2025-09-30 17:46:19,724 INFO c.a.s.i.FlightServiceImpl [main] Successfully retrieved flight with ID: 1
+2025-09-30 17:46:19,733 INFO c.a.s.i.FlightServiceImpl [main] Retrieving all flights
+2025-09-30 17:46:19,737 INFO c.a.s.i.FlightServiceImpl [main] Retrieved 2 flights from database
+2025-09-30 17:46:19,745 INFO c.a.s.i.FlightServiceImpl [main] Adding new flight: Flight{flightId=1, flightName='TestFlight', source='Source', Destination='Destination', ticketPrice=100.0}
+2025-09-30 17:46:19,747 INFO c.a.s.i.FlightServiceImpl [main] Flight saved with ID: 1
+2025-09-30 17:46:19,784 INFO c.a.s.i.FlightServiceImpl [main] Retrieving flight with ID: 999
+2025-09-30 17:46:19,786 ERROR c.a.s.i.FlightServiceImpl [main] Error retrieving flight with ID 999: No Flight with Id: 999
+2025-09-30 17:46:19,892 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30 17:46:20,511 INFO o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-09-30 17:46:20,519 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-09-30 17:46:20,525 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-09-30 17:47:06,934 INFO o.s.b.StartupInfoLogger [main] Starting AirlineApplication using Java 17.0.12 with PID 18284 (E:\Personal\airline-app-java-db\target\classes started by ctgdevopsai in E:\Personal\airline-app-java-db)
+2025-09-30 17:47:06,938 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.0.11, Spring v6.0.12
+2025-09-30 17:47:06,941 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-09-30 17:47:08,686 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-30 17:47:08,827 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interfaces.
+2025-09-30 17:47:10,170 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9095 (http)
+2025-09-30 17:47:10,184 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9095"]
+2025-09-30 17:47:10,190 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-09-30 17:47:10,193 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.13]
+2025-09-30 17:47:10,555 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-09-30 17:47:10,560 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3392 ms
+2025-09-30 17:47:11,874 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-30 17:47:12,212 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2025-09-30 17:47:13,091 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-09-30 17:47:14,610 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c6bba7d
+2025-09-30 17:47:14,617 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-09-30 17:47:14,654 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-09-30 17:47:14,659 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-30 17:47:16,575 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-30 17:47:16,607 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30 17:47:17,346 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-30 17:47:18,072 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9095"]
+2025-09-30 17:47:18,123 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9095 (http) with context path ''
+2025-09-30 17:47:18,140 INFO o.s.b.StartupInfoLogger [main] Started AirlineApplication in 12.89 seconds (process running for 13.964)
+2025-09-30 17:48:32,069 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30 17:48:32,074 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-09-30 17:48:32,172 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-09-30 17:49:16,315 INFO o.s.b.StartupInfoLogger [main] Starting AirlineApplicationTests using Java 17.0.12 with PID 4952 (started by ctgdevopsai in E:\Personal\airline-app-java-db)
+2025-09-30 17:49:16,322 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.0.11, Spring v6.0.12
+2025-09-30 17:49:16,324 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-09-30 17:49:19,098 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-30 17:49:19,435 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 240 ms. Found 1 JPA repository interfaces.
+2025-09-30 17:49:21,007 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-30 17:49:21,332 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2025-09-30 17:49:24,175 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-09-30 17:49:25,872 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-30 17:49:25,881 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-09-30 17:49:26,101 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-09-30 17:49:29,920 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-09-30 17:49:30,008 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30 17:49:32,152 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-30 17:49:36,118 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-09-30 17:49:36,648 INFO o.s.b.StartupInfoLogger [main] Started AirlineApplicationTests in 22.148 seconds (process running for 29.935)
+2025-09-30 17:49:39,918 INFO c.a.c.FlightController [main] Updating flight with ID: 1
+2025-09-30 17:49:39,918 DEBUG c.a.c.FlightController [main] Update data: Flight{flightId=1, flightName='null', source='null', Destination='null', ticketPrice=null}
+2025-09-30 17:49:39,939 INFO c.a.c.FlightController [main] Successfully updated flight with ID: 1
+2025-09-30 17:49:39,987 INFO c.a.c.FlightController [main] Deleting flight with ID: 1
+2025-09-30 17:49:40,007 INFO c.a.c.FlightController [main] Successfully deleted flight with ID: 1
+2025-09-30 17:49:40,196 INFO c.a.c.FlightController [main] Fetching all flights
+2025-09-30 17:49:40,198 DEBUG c.a.c.FlightController [main] Retrieved 2 flights from database
+2025-09-30 17:49:40,201 DEBUG c.a.c.FlightController [main] Server IP: 172.27.56.35
+2025-09-30 17:49:40,203 INFO c.a.c.FlightController [main] Successfully retrieved all flights with server IP
+2025-09-30 17:49:40,306 INFO c.a.c.FlightController [main] Adding new flight: Flight{flightId=0, flightName='null', source='null', Destination='null', ticketPrice=null}
+2025-09-30 17:49:40,310 INFO c.a.c.FlightController [main] Successfully added flight with ID: 0
+2025-09-30 17:49:40,346 INFO c.a.c.FlightController [main] Fetching flight with ID: 1
+2025-09-30 17:49:40,375 INFO c.a.c.FlightController [main] Successfully retrieved flight with ID: 1
+2025-09-30 17:49:41,760 INFO c.a.s.i.FlightServiceImpl [main] Updating flight with ID: 1
+2025-09-30 17:49:41,761 DEBUG c.a.s.i.FlightServiceImpl [main] Update data: Flight{flightId=1, flightName='UpdatedFlight', source='UpdatedSource', Destination='UpdatedDestination', ticketPrice=150.0}
+2025-09-30 17:49:41,763 INFO c.a.s.i.FlightServiceImpl [main] Successfully updated flight with ID: 1
+2025-09-30 17:49:41,770 INFO c.a.s.i.FlightServiceImpl [main] Deleting flight with ID: 1
+2025-09-30 17:49:41,772 INFO c.a.s.i.FlightServiceImpl [main] Successfully deleted flight with ID: 1
+2025-09-30 17:49:41,783 INFO c.a.s.i.FlightServiceImpl [main] Retrieving flight with ID: 1
+2025-09-30 17:49:41,786 INFO c.a.s.i.FlightServiceImpl [main] Successfully retrieved flight with ID: 1
+2025-09-30 17:49:41,892 INFO c.a.s.i.FlightServiceImpl [main] Retrieving all flights
+2025-09-30 17:49:41,896 INFO c.a.s.i.FlightServiceImpl [main] Retrieved 2 flights from database
+2025-09-30 17:49:41,982 INFO c.a.s.i.FlightServiceImpl [main] Adding new flight: Flight{flightId=1, flightName='TestFlight', source='Source', Destination='Destination', ticketPrice=100.0}
+2025-09-30 17:49:42,006 INFO c.a.s.i.FlightServiceImpl [main] Flight saved with ID: 1
+2025-09-30 17:49:42,104 INFO c.a.s.i.FlightServiceImpl [main] Retrieving flight with ID: 999
+2025-09-30 17:49:42,184 ERROR c.a.s.i.FlightServiceImpl [main] Error retrieving flight with ID 999: No Flight with Id: 999
+2025-09-30 17:49:42,413 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-30 17:49:43,559 INFO o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-09-30 17:49:43,626 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-09-30 17:49:43,687 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
